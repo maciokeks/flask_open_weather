@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather app</title>
+	<link rel="stylesheet" type="text/css" href="../static/styles/web2.css">
+		<script>
+		window.setInterval('refres_page()', 60000);
+		function refres_page(){
+			window.location.reload();
+		}
+		</script>
+</head>
+	<body>
+		<div class="glowing">
+			<span style = "--i:1;"></span>
+			<span style = "--i:2;"></span>
+			<span style = "--i:3;"></span>
+		</div>
+				<div class="item_box">
+					<div class="data">
+						<div class="data_icon">
+							<object data="../static/styles/temperature-svgrepo-com.svg" width="130" height="130"></object>
+						</div>
+						<div class="data_data">
+							<a>Temperature: {{temp}} *</a>
+							<br>
+ 							<a>Feels like: {{temp_feel}} *</a>
+							<br>
+ 							<a>Temperature min: {{temp_min}} *</a>
+							<br>
+ 							<a>Temperature max: {{temp_max}} *</a>
+							<br>
+ 							<a>Pressure: {{pressure}} hPa</a>
+							<br>
+ 							<a>Humidity: {{humidity}} %</a>
+						</div>
+					</div>
+					<div class="data">
+						<div class="data_icon">
+							<object data="../static/styles/wind-svgrepo-com.svg" width="130" height="130"></object>
+						</div>
+						<div class="data_data">
+							<a>Wind speed: {{wind_speed}}</a>
+							<br>
+ 							<a>Wind degree: {{wind_deg}} </a>
+							<br>
+ 							<a>Wind gust: {{wind_gust}} </a>
+						</div>
+					</div>
+					<div class="data">
+						<div class="data_icon">
+							<object data="../static/styles/weather-svgrepo-com.svg" width="130" height="130"></object>
+						</div>
+						<div class="data_data">
+							<a>Visibility: {{visibility}} M</a>
+							<br>
+ 							<a>Clouds: {{clouds}} % </a>
+							<br>
+ 							<a>Sunrise: {{sys_sunrise}} </a>
+							<br>
+ 							<a>Sunset: {{sys_sunset}} </a>
+						</div>
+					</div>
+					<div class="data">
+						<div class="data_icon">
+							<object data="../static/styles/location-svgrepo-com.svg" width="130" height="130"></object>
+						</div>
+						<div class="data_data">
+							<a>Cordinates lon: {{cords_lon}} </a>
+							<br>
+							<a>Cordinates lat: {{cords_lat}} </a>
+						</div>
+					</div>
+					<div class="data">
+						<div class="data_icon">
+							<object data="../static/styles/city-svgrepo-com.svg" width="130" height="130"></object>
+						</div>
+						<div class="data_data">
+							<a>City: {{name}} </a>
+						</div>
+					</div>
+				</div>
+			<div class="glowing">
+			<span style = "--i:1;"></span>
+			<span style = "--i:2;"></span>
+			<span style = "--i:3;"></span>
+		</div>
+	</body>
+</html>
+<! -- Created by Maciokeks-->

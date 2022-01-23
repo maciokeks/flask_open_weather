@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather app</title>
+	<link rel="stylesheet" type="text/css" href="../static/styles/web.css">
+	<script>
+		function submit_send(){
+			document.getElementById("forms").submit();
+		}
+	</script>
+</head>
+	<body>
+	<div class="glowing">
+		<span style = "--i:1;"></span>
+		<span style = "--i:2;"></span>
+		<span style = "--i:3;"></span>
+	</div>
+		<div class="form_action">
+			<object data="../static/styles/gummy-thermometer.svg" width="300" height="300"></object>
+			<h1 style="color:white; text-transform: uppercase;">Specify your city</h1>
+			<br>
+			<form id="forms" action="{{url_for('weather_results')}}" method="POST">
+				<input type="text" id="city" name="city" placeholder="Enter your city"></input>
+				<select id="units" name="units">
+					<option	 value="metric">metric</option>
+					<option  value="standard">standard</option>
+					<option  value="imperial">imperial</option>
+				</select>
+				<div class="container">
+					<a id="button_id" class="button" href="javascript:submit_send()">Submit</a>
+					<!--<a href="javascript:myFunc()">href</a>
+      				<a href="#" onclick="javascript:myFunc()">onclick</a>-->
+				</div>
+			</form>
+		</div>
+		<div class="glowing">
+			<span style = "--i:1;"></span>
+			<span style = "--i:2;"></span>
+			<span style = "--i:3;"></span>
+		</div>
+	</body>
+</html>
+<! -- Created by Maciokeks-->
