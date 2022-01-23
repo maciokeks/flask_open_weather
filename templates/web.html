@@ -22,9 +22,9 @@
 			<form id="forms" action="{{url_for('weather_results')}}" method="POST">
 				<input type="text" id="city" name="city" placeholder="Enter your city"></input>
 				<select id="units" name="units">
-					<option	 value="metric">metric</option>
-					<option  value="standard">standard</option>
-					<option  value="imperial">imperial</option>
+					<option	 value="metric °C">metric</option>
+					<option  value="standard °F">standard</option>
+					<option  value="imperial °K">imperial</option>
 				</select>
 				<div class="container">
 					<a id="button_id" class="button" href="javascript:submit_send()">Submit</a>
