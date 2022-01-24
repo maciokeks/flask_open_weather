@@ -1,4 +1,4 @@
-#Add all improtant values to the results website and make new request and reload website after 30 second
+
 import requests
 import configparser
 from flask import Flask, render_template, request
